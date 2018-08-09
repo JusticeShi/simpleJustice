@@ -1,0 +1,27 @@
+<template>
+    <view class="page">
+        <view class="page__bd">
+            <view class="weui-grids">
+                <block wx:for="{{grids}}" wx:key="*this">
+                    <navigator url="{{item.page}}" class="weui-grid" hover-class="weui-grid_active">
+                        <image class="weui-grid__icon" src="../images/{{item.image}}" />
+                        <view class="weui-grid__label">{{item.name}}</view>
+                    </navigator>
+                </block>
+            </view>
+        </view>
+    </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  export default class Grid extends wepy.page {
+    data = {
+      grids: [
+        {id: 1, name: 'Just News', page: 'news/newsList', image: 'icon-new.png'},
+        // {id: 1, name: '历史上的今天', page: 'todayhistory', image: ''},
+        {id: 1, name: '共享书房', page: 'library/shareLibrary', image: 'icon-book.png'}
+      ]
+    }
+  }
+</script>

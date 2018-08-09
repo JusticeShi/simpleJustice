@@ -1,0 +1,37 @@
+<style lang="less">
+@import "./styles/weui/index.less";
+@import "./styles/custom/index.less";
+</style>
+
+
+<script>
+import wepy from 'wepy'
+import 'wepy-async-function'
+
+export default class extends wepy.app {
+  config = {
+    pages: [
+      'pages/index',
+      'pages/news/newsList',
+      'pages/news/article',
+      'pages/todayhistory',
+      'pages/library/shareLibrary'
+    ],
+    window: {
+      backgroundTextStyle: 'light',
+      navigationBarBackgroundColor: '#fff',
+      navigationBarTitleText: '简单即正义',
+      navigationBarTextStyle: 'black'
+    }
+  }
+
+  globalData = {
+    userInfo: null
+  }
+
+  constructor () {
+    super()
+    this.use('requestfix')
+  }
+}
+</script>
