@@ -1,4 +1,4 @@
-# Ufutx library
+# 自用小程序
 
 ## Features
 
@@ -22,7 +22,6 @@
 
 扫码访问小程序:
 
-![友福图书馆](https://library.ufutx.com/imgs/mp_library.jpg)
 
 
 ## Usage
@@ -30,8 +29,8 @@
 ### Start
 
 ``` bash
-git clone git@github.com:glore/library.git
-cd library
+git clone git@github.com:JusticeShi/simpleJustice.git
+cd simpleJustice
 npm install wepy-cli -g
 npm install
 npm run dev
@@ -70,12 +69,13 @@ npm run build
 
 
 ## Thanks
+		
 
-This repository relies on the [wepy](https://github.com/wepyjs/wepy), thanks to the efforts of the author.
+This repository relies on the [wepy](https://github.com/wepyjs/wepy),[友福图书馆](https://github.com/glore/library),[扇贝阅读](https://github.com/yshkk/shanbay-mina) thanks to the efforts of the author.
 For detailed explanation & more functions, checkout the [微信官方小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/) and [小程序框架wepy文档](https://wepyjs.github.io/wepy/).
 
 This repository is forked form https://github.com/Thunf/wepy-demo-bookmall Thanks Thunf
-
+This repository is forked form https://github.com/glore/library  Thanks  Ufutx, Glore
 
 ## Fork It And Make Your Own
 
@@ -91,7 +91,7 @@ Please note that the open source protocol for this repository is **GPL**. This m
 
 **You must open the source code**
 
-Copyright (c) 2017 - Ufutx, Glore
+Copyright (c) 2018 - JusticeShi
 
 
 
