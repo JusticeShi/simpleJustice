@@ -74,7 +74,6 @@ npm run build
 This repository relies on the [wepy](https://github.com/wepyjs/wepy),[友福图书馆](https://github.com/glore/library),[扇贝阅读](https://github.com/yshkk/shanbay-mina) thanks to the efforts of the author.
 For detailed explanation & more functions, checkout the [微信官方小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/) and [小程序框架wepy文档](https://wepyjs.github.io/wepy/).
 
-This repository is forked form https://github.com/Thunf/wepy-demo-bookmall Thanks Thunf
 This repository is forked form https://github.com/glore/library  Thanks  Ufutx, Glore
 
 ## Fork It And Make Your Own
@@ -85,7 +84,7 @@ You can fork this repo to create your own demo, and run it.
 
 ## LICENSE
 
-[LICENSE](https://github.com/Thunf/wepy-demo-bookmall/blob/master/LICENSE)
+[LICENSE](https://github.com/glore/library/LICENSE)
 
 Please note that the open source protocol for this repository is **GPL**. This means that you have the freedom to run, copy, modify and distribute the software. However, this software your modified itself is bound by GPL.
 
