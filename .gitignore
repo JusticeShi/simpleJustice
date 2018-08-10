@@ -4,6 +4,9 @@ web
 .wepycache
 .DS_Store
 
+#JusticeMan
+JusticeMan/.idea/
+
 # Logs
 logs
 *.log
