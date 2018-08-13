@@ -3,10 +3,6 @@ dist
 web
 .wepycache
 .DS_Store
-packaget.lock.json
-#JusticeMan
-JusticeMan/.idea/
-JusticeMan/**/__pycache__/
 
 # Logs
 logs
