@@ -2,20 +2,16 @@
 
 ## Features
 
-* 图书馆管理
-  - 创建图书馆
+* 新闻阅读
+  - 英语新闻阅读
+
+* 共享图书馆
   - 图书分类管理
   - 图书管理
   - 成员管理
   - 借阅管理
-
-* 个人图书馆
-  - 同图书馆
   - 好友间互借
 
-* 友书同享
-  - 图书免费赠送(但1+3个月必须赠送)
-  - 提供免费图片者可获得友福同享购物券
 
 ....
 
@@ -69,7 +65,7 @@ npm run build
 
 
 ## Thanks
-		
+
 
 This repository relies on the [wepy](https://github.com/wepyjs/wepy),[友福图书馆](https://github.com/glore/library),[扇贝阅读](https://github.com/yshkk/shanbay-mina) thanks to the efforts of the author.
 For detailed explanation & more functions, checkout the [微信官方小程序文档](https://mp.weixin.qq.com/debug/wxadoc/dev/api/) and [小程序框架wepy文档](https://wepyjs.github.io/wepy/).
@@ -91,7 +87,3 @@ Please note that the open source protocol for this repository is **GPL**. This m
 **You must open the source code**
 
 Copyright (c) 2018 - JusticeShi
-
-
-
-
