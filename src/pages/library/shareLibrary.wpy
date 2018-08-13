@@ -8,11 +8,11 @@
     </view>
     <view class="" style="margin:26rpx;z-index: 1000;position:relative;">
       <button  size="mini" @tap="gotoTab('/pages/map')" class="btn" style="padding:48rpx 22rpx 10rpx 22rpx;line-height: 42rpx;border-radius: 50%;position: fixed;right: 140rpx;top: -42rpx;background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#0b95e6), to(#6bb2e6))">
-        <image  class="imgicon" mode="aspectFit" src="../../images/tabbars/home.png" style="width: 60rpx;height: 60rpx;float: left;"></image>
+        <image  class="imgicon" mode="aspectFit" src="../../images/library/tabbars/home.png" style="width: 60rpx;height: 60rpx;float: left;"></image>
       </button>
       <view class="smile" style="position: fixed;z-index: 1000;right: 24.5vw; top: -25rpx;"></view>
       <button  size="mini" open-type="share" @tap="share" class="btn" style="padding:48rpx 22rpx 10rpx 22rpx;line-height: 42rpx;border-radius: 50%;position: fixed;right: 12rpx;top: -42rpx;background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(#0b95e6), to(#6bb2e6))">
-        <image  class="imgicon" mode="aspectFit" src="../../images/icon/share_red.png" style="width: 60rpx;height: 60rpx;float: left;"></image>
+        <image  class="imgicon" mode="aspectFit" src="../../images/library/icon/share_red.png" style="width: 60rpx;height: 60rpx;float: left;"></image>
       </button>
     </view>
     <view class="clearfloat"></view>
@@ -28,12 +28,12 @@
     <view class="clearfloat"></view>
     <view class="library-title">
       {{mylib.name}}
-      <image src="../../images/icon/icon-modification.png" style="width: 32rpx;height: 32rpx;margin-bottom: -4rpx;" wx:if="{{member_type == 'ADMIN'}}" @tap="goto('/pages/library/create?id={{mylib.id}}')"></image>
+      <image src="../../images/library/icon/icon-modification.png" style="width: 32rpx;height: 32rpx;margin-bottom: -4rpx;" wx:if="{{member_type == 'ADMIN'}}" @tap="goto('/pages/library/create?id={{mylib.id}}')"></image>
     </view>
     <view class="library-title" wx:if="{{mylib.address !== null}}" style="margin-top: 20rpx;font-weight: inherit;font-size: 26rpx;" @tap="goadderss({{mylib.location_latitude}},{{mylib.location_longitude}})">
       <span class="font_28 bold">地址：</span>{{mylib.address}}
       <span style="color: #23b2e6">
-        <image src="../../images/tabbars/address.png"  mode="aspectFit" class="imgicon" style="margin-bottom: 8rpx;width: 60rpx;height: 60rpx"></image>
+        <image src="../../images/library/tabbars/address.png"  mode="aspectFit" class="imgicon" style="margin-bottom: 8rpx;width: 60rpx;height: 60rpx"></image>
       </span>
     </view>
     <view class="weui-flex library-wrapper">
@@ -84,7 +84,7 @@
       <image src="{{BookImage}}" mode="aspectFit" bindtap="chooseimage"/>
     </view>
     <view class="flo_l hide_image" wx:else bindtap="chooseimage">
-      <image src="../../images/icon/icon-upload.png" mode="aspectFit" />
+      <image src="../../images/library/icon/icon-upload.png" mode="aspectFit" />
       <text class="font_26">上传封面</text>
     </view>
     <view class="flo_l" style="width: 65%">
@@ -142,12 +142,12 @@
   </view>
   <block wx:if="{{mylib.sorts_count == '0' && member_type == 'ADMIN' && !show && !ShowEdit}}">
     <view style="margin: auto;margin-top: -32rpx;position: relative">
-      <image src='../../images/message.png'  mode="aspectFit"  style="transform: rotateX(180deg);width: 280rpx;height: 214rpx "></image>
+      <image src='../../images/library/message.png'  mode="aspectFit"  style="transform: rotateX(180deg);width: 280rpx;height: 214rpx "></image>
       <view class="font_26" style="position: absolute;left: 60rpx;bottom: 62rpx;">1.先去<span style="color: #4ba7ff"  @tap="goto('/pages/library/sorts?library_id={{mylib.id}}')">新增分类</span>
       </view>
     </view>
     <!--<view style="margin: auto;margin-bottom: -32rpx;position: fixed;let: 38rpx;bottom: 150rpx;">-->
-      <!--<image src='../../images/message.png'  mode="aspectFit"  style="transform: rotateY(180deg) rotateZ(16deg);width: 340rpx;height: 218rpx;"></image>-->
+      <!--<image src='../../images/library/message.png'  mode="aspectFit"  style="transform: rotateY(180deg) rotateZ(16deg);width: 340rpx;height: 218rpx;"></image>-->
       <!--<view class="font_26" style="position: absolute;left: 72rpx;bottom: 136rpx;transform: rotateZ(-10deg);">2.扫码录入图书</view>-->
     <!--</view>-->
   </block>
@@ -159,26 +159,26 @@
     <!--<view class="scan_home {{rotate ? 'rotate' : ''}}" @tap="rotate" style="z-index: 12;">-->
       <!--<form bindsubmit="formSubmit" report-submit>-->
         <!--<button formType="submit" class="btn" data-type="click">-->
-          <!--<image  class="imgicon" mode="aspectFit" src="../../images/icon/icon-scan.png" style="width: 60rpx;height: 60rpx"></image>-->
+          <!--<image  class="imgicon" mode="aspectFit" src="../../images/library/icon/icon-scan.png" style="width: 60rpx;height: 60rpx"></image>-->
         <!--</button>-->
       <!--</form>-->
     <!--</view>-->
     <!--<view class="scan_home scan_active {{changerotate ? 'changerotate1' : ''}} {{shrink ? 'changeshrink1' : ''}}" @tap="scanBook({{mylib.id}})">-->
-      <!--<image  class="imgicon" mode="aspectFit" src="../../images/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
+      <!--<image  class="imgicon" mode="aspectFit" src="../../images/library/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
       <!--<text style="font-size: 22rpx;position: absolute;left: 26rpx;bottom: 0rpx;">录书</text>-->
     <!--</view>-->
     <!--<view class="scan_home scan_active {{changerotate ? 'changerotate2' : ''}} {{shrink ? 'changeshrink2' : ''}}" @tap="scanReturn({{mylib.id}})">-->
-      <!--<image  class="imgicon" mode="aspectFit" src="../../images/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
+      <!--<image  class="imgicon" mode="aspectFit" src="../../images/library/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
       <!--<text style="font-size: 22rpx;position: absolute;left: 26rpx;bottom: 0rpx;">还书</text>-->
     <!--</view>-->
     <!--<view class="scan_home scan_active {{changerotate ? 'changerotate3' : ''}} {{shrink ? 'changeshrink3' : ''}}"  @tap="scanBorrow({{mylib.id}})">-->
-      <!--<image  class="imgicon" mode="aspectFit" src="../../images/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
+      <!--<image  class="imgicon" mode="aspectFit" src="../../images/library/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
       <!--<text style="font-size: 22rpx;position: absolute;left: 26rpx;bottom: 0rpx;">借书</text>-->
     <!--</view>-->
   <!--</view>-->
   <!--<view class="scan"  wx:if="{{mylib.member && mylib.member.status=='MEMBER'}}">-->
     <!--<view class="scan_home scan_active {{changerotate ? 'changerotate3' : ''}} {{shrink ? 'changeshrink3' : ''}}"  @tap="scanBorrow({{mylib.id}})">-->
-      <!--<image  class="imgicon" mode="aspectFit" src="../../images/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
+      <!--<image  class="imgicon" mode="aspectFit" src="../../images/library/tabbars/icon-qr.png" style="margin-top: -12px"></image>-->
       <!--<text style="font-size: 22rpx;position: absolute;left: 26rpx;bottom: 0rpx;margin-bottom: 4rpx">借书</text>-->
     <!--</view>-->
   <!--</view>-->
@@ -253,7 +253,7 @@
       EditAuthor: '',
       ShowEdit: false,
       librarydata: [],
-      BookImage: '../images/icon/icon-upload.png',
+      BookImage: '../images/library/icon/icon-upload.png',
       ShowUpload: false,
       ShowSorts: false,
       library_sort_id: '',
@@ -383,7 +383,7 @@
         } else if (status == 'join') {
           wx.showToast({
             title: '管理员审核中...',
-            image: '../../images/icon/icon-error.png',
+            image: '../../images/library/icon/icon-error.png',
             duration: 1500
           })
         } else {
@@ -490,7 +490,7 @@
                 fail: ({code, data}) => {
                   wx.showToast({
                     title: '未能识别此书...',
-                    image: '../../images/icon/icon-error.png',
+                    image: '../../images/library/icon/icon-error.png',
                     duration: 1500
                   })
                   that.ShowEdit = true
@@ -571,7 +571,7 @@
           fail: (res) => {
             wx.showToast({
               title: '出错了...',
-              image: '../../images/icon/icon-error.png',
+              image: '../../images/library/icon/icon-error.png',
               duration: 1500
             })
             that.libraries = []
@@ -591,25 +591,25 @@
         if (!that.EditImage) {
           wx.showToast({
             title: '请先上传图片',
-            image: '../../images/icon/icon-error.png',
+            image: '../../images/library/icon/icon-error.png',
             duration: 1500
           })
         } else if (!that.EditAuthor) {
           wx.showToast({
             title: '请填写作者',
-            image: '../../images/icon/icon-error.png',
+            image: '../../images/library/icon/icon-error.png',
             duration: 1500
           })
         } else if (!that.EditTitle) {
           wx.showToast({
             title: '请填写书的名字',
-            image: '../../images/icon/icon-error.png',
+            image: '../../images/library/icon/icon-error.png',
             duration: 1500
           })
         } else if (!that.EditSummary) {
           wx.showToast({
             title: '请填写书的简介',
-            image: '../images/icon/icon-error.png',
+            image: '../images/library/icon/icon-error.png',
             duration: 1500
           })
         } else {
@@ -656,7 +656,7 @@
                 fail: (res) => {
                   wx.showToast({
                     title: '出错了...',
-                    image: '../../images/icon/icon-error.png',
+                    image: '../../images/library/icon/icon-error.png',
                     duration: 1500
                   })
                   that.libraries = []
@@ -670,7 +670,7 @@
             fail: ({code, data}) => {
               wx.showToast({
                 title: '出错了...',
-                image: '../images/icon/icon-error.png',
+                image: '../images/library/icon/icon-error.png',
                 duration: 1500
               })
             },
